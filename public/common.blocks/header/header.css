@@ -1,0 +1,65 @@
+.logo {
+  width: 40px;
+}
+
+.header {
+  display: grid;
+  grid-template: auto / 1fr 1fr;
+  place-items: center;
+  padding: 1rem;
+}
+
+.header__link {
+  text-decoration: none;
+  color: #28224b;
+  opacity: 0.8;
+  transition: opacity 200ms ease;
+  font-size: 1em;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.header__link:hover {
+  opacity: 1;
+}
+
+.header__btn {
+  min-width: 55px;
+  min-height: 55px;
+  border: 0;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 13px;
+  background-color: #35b8be;
+  background-image: url("/public/assets/svg/Button_Wave.svg");
+  background-position: 0px 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.header__counter {
+  transform: translate(-15px, -25px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 7px 7px 25px 0 rgb(126 130 143 / 27%);
+  font-size: 13px;
+  color: #35b8be;
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+  border-radius: 50%;
+  font-weight: 700;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header__btn-container {
+  display: flex;
+  align-items: center;
+}
