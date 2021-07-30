@@ -1,0 +1,19 @@
+.hero {
+  display: grid;
+  grid-template: auto / 1fr 1fr; 
+  place-items: center;
+  column-gap: 10em;
+}
+
+.hero__title {
+  font-size: 2.5em;
+}
+
+.hero__title--blue {
+  color: #35b8be;
+}
+
+.hero__description {
+  font-size: 1.1em;
+  color: #546285;
+}
