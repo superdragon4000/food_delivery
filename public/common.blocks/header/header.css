@@ -4,19 +4,24 @@
 
 .header {
   display: grid;
-  grid-template: auto / 1fr 1fr;
+  grid-template: auto / 1fr;
   place-items: center;
-  padding: 1rem;
+}
+
+.header-wrapper {
+  display: grid;
+  grid-template: auto / 1fr 1fr;
+  padding: 1.5rem;
+  column-gap: 13rem;
 }
 
 .header__link {
-  text-decoration: none;
+  padding: 0 16px;
   color: #28224b;
+  font-size: 1em;
+  text-decoration: none;
   opacity: 0.8;
   transition: opacity 200ms ease;
-  font-size: 1em;
-  padding-left: 16px;
-  padding-right: 16px;
 }
 
 .header__link:hover {
@@ -24,33 +29,33 @@
 }
 
 .header__btn {
+  box-sizing: border-box;
   min-width: 55px;
   min-height: 55px;
-  border: 0;
-  box-sizing: border-box;
-  border-radius: 4px;
   padding: 13px;
   background-color: #35b8be;
   background-image: url("/public/assets/svg/Button_Wave.svg");
-  background-position: 0px 0px;
-  background-size: cover;
   background-repeat: no-repeat;
+  background-position: 0;
+  background-size: cover;
+  border: 0;
+  border-radius: 4px;
   cursor: pointer;
 }
 
 .header__counter {
-  transform: translate(-15px, -25px);
   display: flex;
-  justify-content: center;
   align-items: center;
-  box-shadow: 7px 7px 25px 0 rgb(126 130 143 / 27%);
-  font-size: 13px;
-  color: #35b8be;
+  justify-content: center;
   width: 25px;
   height: 25px;
+  color: #35b8be;
+  font-weight: 700;
+  font-size: 13px;
   background-color: #fff;
   border-radius: 50%;
-  font-weight: 700;
+  box-shadow: 7px 7px 25px 0 rgb(126 130 143 / 27%);
+  transform: translate(-15px, -25px);
 }
 
 .nav {
@@ -62,4 +67,29 @@
 .header__btn-container {
   display: flex;
   align-items: center;
+}
+
+.header-open {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 48px;
+  color: #fff;
+  font-size: 0.95em;
+  background-color: #35b8be;
+  background-image: url("/public/assets/svg/Banner_Wave.svg");
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+  background-size: contain;
+}
+
+.header-open__text {
+  color: hsla(0, 0%, 100%, 0.8);
+}
+
+.header-open__link {
+  margin-left: 5px;
+  color: #fff;
+  text-decoration: none;
 }
