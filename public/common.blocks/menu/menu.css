@@ -1,0 +1,39 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 140px 3%;
+  background-image: url("/public/assets/svg/BG_Shape_Content.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 96% 90%;
+}
+
+.menu-buttons {
+  display: flex;
+  flex-direction: row;
+  column-gap: 2em;
+}
+
+.menu__title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #35b8be;
+  font-weight: 700;
+  font-size: 3.4em;
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.menu__description {
+  margin-bottom: 10px;
+  color: #546285;
+  font-size: 1.1em;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+}
+
+.menu__description--phone {
+  color: #35b8be;
+}

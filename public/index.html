@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="eng">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,147 +10,158 @@
   <link rel="stylesheet" href="common.blocks/header/header.css">
   <link rel="stylesheet" href="common.blocks/hero/hero.css">
   <link rel="stylesheet" href="common.blocks/button/button.css">
+  <link rel="stylesheet" href="common.blocks/fresh/fresh.css">
+  <link rel="stylesheet" href="common.blocks/how-works/how-works.css">
+  <link rel="stylesheet" href="common.blocks/menu/menu.css">
+  <link rel="stylesheet" href="common.blocks/index-faq/index-faq.css">
+  <link rel="stylesheet" href="common.blocks/call-us/call-us.css">
+  <link rel="stylesheet" href="common.blocks/locals/locals.css">
   <title>Chomp - Webflow Ecommerce Template</title>
 </head>
 <body class="body">
   <header class="header">
-    <a href="index.html"><img class="logo" src="assets/svg/logo.svg" alt=""></a>
-    <nav class="nav">
-      <a class="header__link" href="index.html">Home</a>
-      <a class="header__link" href="order.html">Order</a>
-      <a class="header__link" href="company.html">Company</a>
-      <a class="header__link" href="faq.html">FAQ</a>
-      <a class="header__link" href="contact.html">Contact</a>
-      <div class="header__btn-container">
-        <button class="header__btn">
-          <svg class="w-commerce-commercecartopenlinkicon cart-icon" width="17px" height="17px" viewBox="0 0 17 17"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><path d="M2.60592789,2 L0,2 L0,0 L4.39407211,0 L4.84288393,4 L16,4 L16,9.93844589 L3.76940945,12.3694378 L2.60592789,2 Z M15.5,17 C14.6715729,17 14,16.3284271 14,15.5 C14,14.6715729 14.6715729,14 15.5,14 C16.3284271,14 17,14.6715729 17,15.5 C17,16.3284271 16.3284271,17 15.5,17 Z M5.5,17 C4.67157288,17 4,16.3284271 4,15.5 C4,14.6715729 4.67157288,14 5.5,14 C6.32842712,14 7,14.6715729 7,15.5 C7,16.3284271 6.32842712,17 5.5,17 Z" fill="#ffffff" fill-rule="nonzero"></path></g></svg>
-        </button>
-        <span class="header__counter">0</span>
-      </div>
-    </nav>
+    <div class="header-open">
+      <span class="header-open__text">We're open and available for takeaway & delivery.</span>
+      <a class="header-open__link" href="order.html">Order Now</a>
+    </div>
+    <div class="header-wrapper">
+      <a href="index.html" title="Home"><img class="logo" src="assets/svg/logo.svg" alt="Logo" title="Home" /></a>
+      <nav class="nav">
+        <a class="header__link" href="index.html" title="Home">Home</a>
+        <a class="header__link" href="order.html" title="Order">Order</a>
+        <a class="header__link" href="company.html" title="Company">Company</a>
+        <a class="header__link" href="faq.html" title="FAQ">FAQ</a>
+        <a class="header__link" href="contact.html" title="Contact">Contact</a>
+        <div class="header__btn-container">
+          <button class="header__btn">
+            <svg class="w-commerce-commercecartopenlinkicon cart-icon" width="17px" height="17px" viewbox="0 0 17 17"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><path d="M2.60592789,2 L0,2 L0,0 L4.39407211,0 L4.84288393,4 L16,4 L16,9.93844589 L3.76940945,12.3694378 L2.60592789,2 Z M15.5,17 C14.6715729,17 14,16.3284271 14,15.5 C14,14.6715729 14.6715729,14 15.5,14 C16.3284271,14 17,14.6715729 17,15.5 C17,16.3284271 16.3284271,17 15.5,17 Z M5.5,17 C4.67157288,17 4,16.3284271 4,15.5 C4,14.6715729 4.67157288,14 5.5,14 C6.32842712,14 7,14.6715729 7,15.5 C7,16.3284271 6.32842712,17 5.5,17 Z" fill="#ffffff" fill-rule="nonzero"></path></g></svg>
+          </button>
+          <span class="header__counter">0</span>
+        </div>
+      </nav>
+    </div>
   </header>
   <main>
     <section class="hero">
       <div>
         <h1 class="hero__title">Beautiful food & takeaway, <span class="hero__title--blue">delivered</span> to your door.</h1>
         <p class="hero__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.</p>
-        <button class="button--blue">Place an Order</button>
-        <div>
-          <img src="assets/svg/trustpilot-logo.svg" alt="">
-          <p>4.8 out of 5 based on 2000+ reviews</p>
+        <button class="button__wave">Place an Order</button>
+        <div class="hero-feedback">
+          <img src="assets/svg/trustpilot-logo.svg" alt="Truspilot" title="Truspilot" />
+          <p class="hero-feedback__description"><span class="hero-feedback__description--blue">4.8 out of 5</span> based on 2000+ reviews</p>
         </div>
       </div>
       <div>
-        <img src="assets/img/Hero_image.png" alt="">
+        <img src="assets/img/Hero_image.png" alt="Hero" title="Hero" />
       </div>
     </section>
-    <section>
-      <div>
-        <h2>The home of fresh products</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.</p>
-        <button class="button--blue">Learn about us</button>
+    <section class="fresh">
+      <div class="fresh-wrapper">
+        <h2 class="fresh__title">The home of <br> fresh products</h2>
+        <p class="fresh__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.</p>
+        <button class="button__wave">Learn about us</button>
       </div>
-      <div>
-        <img src="assets/img/Group.png" alt="">
+      <img src="assets/img/Group.png" alt="Group" title="Group" />
+    </section>
+    <section class="how-works">
+      <h2 class="how-works__title">How it works.</h2>
+      <div class="how-works-cards">
+        <div class="how-works-card">
+          <img class="card__img" src="assets/img/Step_01.png" alt="Step 1" title="Step 1" />
+          <h3 class="card__title">Adapt your menu items</h3>
+          <p class="card__text">Easily adapt your menu using the webflow CMS and allow customers to browse your items.</p>
+        </div>
+        <span class="card__line"></span>
+        <div class="how-works-card">
+          <img class="card__img" src="assets/img/Step_02.png" alt="Step 2" title="Step 2" />
+          <h3 class="card__title">Accept online orders & takeout</h3>
+          <p class="card__text">Let your customers order and pay via the powerful ecommerce system, or simple let them call your store.</p>
+        </div>
+        <span class="card__line"></span>
+        <div class="how-works-card">
+          <img class="card__img" src="assets/img/Step_03.png" alt="" title="Step 3" />
+          <h3 class="card__title">Manage delivery or takeout</h3>
+          <p class="card__text">Manage your own logistics and take orders simply through the ecommerce system.</p>
+        </div>
       </div>
     </section>
-    <section>
-      <h2>How it works.</h2>
-      <div>
-        <img src="assets/img/Step_01.png" alt="">
-        <h3>Adapt your menu items</h3>
-        <p>Easily adapt your menu using the webflow CMS and allow customers to browse your items.</p>
-      </div>
-      <div>
-        <img src="assets/img/Step_02.png" alt="">
-        <h3>Accept online orders & takeout</h3>
-        <p>Let your customers order and pay via the powerful ecommerce system, or simple let them call your store.</p>
-      </div>
-      <div>
-        <img src="assets/img/Step_03.png" alt="">
-        <h3>Manage delivery or takeout</h3>
-        <p>Manage your own logistics and take orders simply through the ecommerce system.</p>
-      </div>
-    </section>
-    <section>
-      <h2>Browse our menu</h2>
-      <p>Use our menu to place an order online, or <a href="#">phone</a> our store to place a pickup order. Fast and fresh food.</p>
-      <div>
-        <button class="button--blue">Burgers</button>
-        <button class="button--inactive">Sides</button>
-        <button class="button--inactive">Drinks</button>
+    <section class="menu">
+      <h2 class="menu__title">Browse our menu</h2>
+      <p class="menu__description">Use our menu to place an order online, or <a class="menu__description--phone" href="#" title="Phone">phone</a> our store to place a pickup order. Fast and fresh food.</p>
+      <div class="menu-buttons">
+        <button class="button__wave">Burgers</button>
+        <button class="button__wave--inactive">Sides</button>
+        <button class="button__wave--inactive">Drinks</button>
       </div>
       <div class="burgers"></div>
       <div class="sides"></div>
       <div class="drinks"></div>
-      <button class="button--blue">See Full Menu</button>
+      <button class="button__wave">See Full Menu</button>
     </section>
-    <section>
+    <section class="index-faq">
       <div>
-        <img src="assets/img/Phones.png" alt="">
+        <img class="index-faq__img" src="assets/img/Phones.png" alt="" title="Phones" />
+        <img class="index-faq__pattern" src="assets/svg/Content_Pattern.svg" alt="">
       </div>
       <div>
-        <h2>Order online with our simple checkout.</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.</p>
-        <button class="button--blue">See our FAQ</button>
-      </div>
-    </section>
-    <section>
-      <div>
-        <h2>Call our store and takeaway when it suits you best.</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.</p>
-        <button class="button--blue">Ph. +61 233 2333</button>
-      </div>
-      <div>
-        <img src="assets/img/Food_Takeaway.png" alt="">
+        <h2 class="index-faq__title">Order online with our simple checkout.</h2>
+        <p class="index-faq__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.</p>
+        <button class="button__wave">See our FAQ</button>
       </div>
     </section>
-    <section>
-      <div>
-        <img src="assets/img/Group_Photo.png" alt="">
+    <section class="call-us">
+      <div class="call-us-wrapper">
+        <h2 class="call-us__title">Call our store and takeaway when it suits you best.</h2>
+        <p class="call-us__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.</p>
+        <button class="button__wave">Ph. +61 233 2333</button>
       </div>
-      <div>
-        <h2>Support good food and local business.</h2>
-        <button class="button--blue">Order Now</button>
+      <img src="assets/img/Food_Takeaway.png" alt="" title="Food Takeaway" />
+    </section>
+    <section class="locals">
+      <img src="assets/img/Group_Photo.png" alt="" title="Group Photo" />
+      <div class="locals-wrapper">
+        <h2 class="locals__title">Support good food and local business.</h2>
+        <button class="button__wave">Order Now</button>
       </div>
     </section>
   </main>
   <footer>
     <div>
-      <img class="logo" src="assets/svg/logo.svg" alt="">
+      <img class="logo" src="assets/svg/logo.svg" alt="" title="Home" />
       <p>Takeaway & Delivery template for small - medium businesses.</p>
     </div>
     <div>
       <h4>Company</h4>
-      <a href="index.html">Home</a>
-      <a href="order.html">Order</a>
-      <a href="faq.html">FAQ</a>
-      <a href="contact.html">Contact</a>
+      <a href="index.html" title="Home">Home</a>
+      <a href="order.html" title="Order">Order</a>
+      <a href="faq.html" title="FAQ">FAQ</a>
+      <a href="contact.html" title="Contact">Contact</a>
     </div>
     <div>
       <h4>Template</h4>
-      <a href="#">Style Guide</a>
-      <a href="#">Changelog</a>
-      <a href="#">Licence</a>
-      <a href="#">Webflow University</a>
+      <a href="#" title="Style Guide">Style Guide</a>
+      <a href="#" title="Changelog">Changelog</a>
+      <a href="#" title="Licence">Licence</a>
+      <a href="#" title="Webflow University">Webflow University</a>
     </div>
     <div>
       <h4>Flowbase</h4>
-      <a href="#">More Cloneables</a>
+      <a href="#" title="More Cloneables">More Cloneables</a>
     </div>
     <hr>
     <div>
-      <p>Built by <a href="http://www.flowbase.co/" target="_blank">Flowbase</a> · Powered by <a href="http://webflow.com/" target="_blank">Webflow</a></p>
+      <p>Built by <a href="http://www.flowbase.co/" target="_blank" title="Flowbase">Flowbase</a> · Powered by <a href="http://webflow.com/" target="_blank" title="">Webflow</a></p>
     </div>
     <div>
-      <a href="http://instagram.com" target="_blank">
-        <img src="assets/svg/social-instagram.svg" alt="">
+      <a href="http://instagram.com" target="_blank" title="Instagram">
+        <img src="assets/svg/social-instagram.svg" alt="" title="Instagram" />
       </a>
-      <a href="http://twitter.com" target="_blank">
-        <img src="assets/svg/social-twitter.svg" alt="">
+      <a href="http://twitter.com" target="_blank" title="Twitter">
+        <img src="assets/svg/social-twitter.svg" alt="" title="Twitter" />
       </a>
-      <a href="http://youtube.com" target="_blank">
-        <img src="assets/svg/social-youtube.svg" alt="">
+      <a href="http://youtube.com" target="_blank" title="Youtube">
+        <img src="assets/svg/social-youtube.svg" alt="" title="Youtube" />
       </a>
     </div>
   </footer>

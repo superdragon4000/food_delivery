@@ -1,0 +1,38 @@
+.fresh {
+  display: grid;
+  grid-template: auto / minmax(5em, 34em) min-content;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 140px 3%;
+  column-gap: 8em;
+  background-image: url("/public/assets/svg/BG_Shape_Content.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 96% 90%;
+}
+
+.fresh-wrapper {
+  background-image: url("/public/assets/img/YumYum.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.fresh__title {
+  margin: 0;
+  color: #35b8be;
+  font-weight: 700;
+  font-size: 3.4em;
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.fresh__description {
+  margin-bottom: 3em;
+  color: #546285;
+  font-size: 1.1em;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+}

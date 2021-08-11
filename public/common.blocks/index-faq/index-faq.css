@@ -1,0 +1,35 @@
+.index-faq {
+  display: grid;
+  grid-template: auto / min-content minmax(10em, 36em);
+  align-items: center;
+  justify-content: center;
+  padding: 120px 3%;
+  column-gap: 3em;
+}
+
+.index-faq__img {
+  width: 36em;
+}
+
+.index-faq__pattern {
+  position: absolute;
+  transform: translate(-36em, 0);
+}
+
+.index-faq__title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #35b8be;
+  font-weight: 700;
+  font-size: 3.4em;
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.index-faq__description {
+  margin-bottom: 3em;
+  color: #546285;
+  font-size: 1.1em;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+}
